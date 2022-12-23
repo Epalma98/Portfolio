@@ -1,0 +1,170 @@
+* {  
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(21, 59, 92)
+
+}
+
+h1 {
+    color: white;
+    font-size: 300%;
+    display: flex;
+    align-self: start;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: large;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.banner img {
+    display: flex;
+    width: 100%;
+    max-height: 50vh;
+    padding-bottom: 15px;
+
+}
+
+.banner h3 {
+    color: white;
+    font-size: 30px;
+    background-color: rgb(54, 207, 209);
+    border: 10px solid rgb(54, 207, 209);
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.headshot img {
+    position: absolute;
+    top: 26%;
+    left: 1%;
+    max-width: 15%;
+    border-radius: 50%;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+   
+}
+.about-me h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    inline-size: 100px;
+    position: flex;
+    left: 15%;
+    padding: 1% 13% 13% 4%;
+    border-right: 3px solid rgb(64, 135, 197);
+}
+
+.about-me p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    inline-size: 100%;
+    position: flex;
+    padding: 5% 5% 5% 5%;
+    line-height: 30px;
+}
+
+.work {
+    display: flex;
+    padding-top: 80px;
+}
+
+.work h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    inline-size: 100px;
+    position: flex;
+    left: 15%;
+    padding: 1% 13% 10% 4%;
+    border-right: 3px solid rgb(64, 135, 197);
+
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: flex-basis 500ms linear;
+}
+
+.card-box img {
+    max-width: 45%;
+    max-height: 100%;
+    inline-size: 100%;
+    position: flex;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    filter: grayscale(50%);
+} 
+
+.card-box img:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    padding-top: 80px;
+}
+
+.contact h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    inline-size: 100px;
+    position: flex;
+    left: 15%;
+    padding: 1% 13% 5% 4%;
+    border-right: 3px solid rgb(64, 135, 197);
+
+}
+
+.contact ul{
+    margin: 3% 3% 3% 5%;
+}
+
+.contact a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1px 10px;
+    margin: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 1%
+}
+
+@media screen and (max-width: 768) {
+    main,
+    nav {
+        flex-direction: column;
+    }
+}
